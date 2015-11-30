@@ -9,7 +9,7 @@ RUN apk update && apk upgrade && \
   apk del build-base ruby-dev && \
   rm -rf /root/.gem
 
-COPY configs/fluentd.conf /etc/fluent/fluent.conf
+COPY config/fluentd.conf /etc/fluent/fluent.conf
 EXPOSE 24224
 
 CMD ["/usr/bin/fluentd"]
