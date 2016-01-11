@@ -6,6 +6,8 @@ RUN apk update && apk upgrade && \
   apk add build-base ruby-dev && \
   gem install --no-document fluentd && \
   gem install fluent-plugin-elasticsearch --no-document &&\
+  gem install fluent-plugin-xml-parser --no-document &&\
+  gem install fluent-plugin-tail-multiline-ex --no-document &&\
   apk del build-base ruby-dev && \
   rm -rf /root/.gem
 
