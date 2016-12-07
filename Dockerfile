@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.3
 MAINTAINER Denis Chekirda <dchekirda@gmail.com>
 
 RUN apk update && apk upgrade && \
