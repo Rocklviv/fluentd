@@ -8,6 +8,7 @@ RUN apk update && apk upgrade && \
   gem install fluentd --no-ri --no-doc && \
   gem install fluent-plugin-elasticsearch --no-document &&\
   gem install fluent-plugin-forest --no-document &&\
+  gem install fluent-plugin-elb-access-log --no-document &&\
   apk del build-base ruby-dev && \
   rm -rf /root/.gem
 
